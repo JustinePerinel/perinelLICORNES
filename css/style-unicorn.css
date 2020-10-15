@@ -1,0 +1,236 @@
+/* reset css dans une autre feuille de style  */
+
+/* la taille des boîtes ne changent pas, peu importe le padding  */
+* {
+    box-sizing: border-box;
+}
+
+/* les typos  */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+    line-height: 18px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Courgette', cursive;
+}
+
+/* entoure la totalité des balises dans body */
+#container {
+    background: url('../img/background.png');
+}
+
+
+/* les styles du header */
+header {
+    background-color: #C55394;
+    height: 70px;
+
+    display: flex;
+    /* espace les élements */
+    justify-content: space-between;
+    /* centre verticalement les élements */
+    align-items: center;
+}
+
+header h2 {
+    font-size: 1.8em;
+    color: #fff;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header a {
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+    color: #fff;
+}
+
+/* style en survol dans ancres */
+header a:hover {
+    background-color: #EB43A3;
+    padding: 26px 10px;
+}
+
+/* style du h1 */
+
+h1 {
+    margin-top: 30px;
+    font-size: 2.3em;
+    font-weight: 900;
+    color: #C55394;
+    text-align: center;
+    height: 140px;
+    line-height: 160px;
+
+    /* l'image de l'arc-en-ciel en arrière plan du h1 */
+    background-image: url(../img/rainbow.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+/* style de main */
+main{
+    width: 1220px;
+    background-color: #fff;
+    margin: auto;
+    box-shadow: 0px 0px 7px 3px rgb(151, 151, 151);
+    border-radius: 10px;
+}
+
+main h2 {
+    color: #EB43A3;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+/* style de la galerie */
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+figure {
+    max-width: 270px;
+    max-height: 275px;
+}
+
+/* lors du survol, figure doit se comporter ainsi  */
+figure:hover {
+/* grâce au z-index, l'image en hover passe au premier plan */
+z-index: 2;
+/* on transforme l'image en survol en la faisait grossir à un échelle de 1.3  */
+transform: scale(1.3);
+}
+
+/* l'image fera au maximum la taille de son parent  */
+img {
+    max-width: 100%;
+}
+
+figcaption {
+    background: rgba(3, 3, 3, 0.897);
+    color: #fff;
+
+    /* on remonte figcaption sur l'image */
+    position: relative;
+    bottom: 30px;
+    height: 30px;
+
+    /* on centre horizontalement et verticalement le texte dans figcaption */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* section 3 #plan */
+
+/* padding pour l'iframe  */
+iframe {
+    padding: 0 0 50px 0;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #C55394;
+    padding: 20px 0;
+}
+
+/* style du formulaire  */
+input {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#email {
+    padding: 5px 10px;
+}
+
+/* style du bouton */
+#button {
+    background-color: #C55394;
+    color: #fff;
+    height: 30px;
+    width: 75px;
+    border-radius: 7px;
+    border: none;
+}
+
+/* style du footer */
+footer {
+    background-color: #E577B5;
+    color: #fff;
+    margin-top: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+/* La classe pour créer une rangée */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Les colonnes*/
+.col-1 {
+    width: 6.333333%;
+    margin: 1%;
+}
+.col-2 {
+    width: 14.6666%;
+    margin: 1%;
+}
+.col-3 {
+    width: 23%;
+    margin: 1%;
+}
+.col-4 {
+    width: 31.333333%;
+    margin: 1%;
+}
+.col-5 {
+    width: 39.6666666%;
+    margin: 1%;
+}
+.col-6 {
+    width: 48%;
+    margin: 1%;
+}
+.col-7 {
+    width: 56.333333%; 
+    margin: 1%;
+}
+.col-8 {
+    width: 64.666666%;
+    margin: 1%; 
+}
+.col-9 {
+    width: 73%;
+    margin: 1%;  
+}
+.col-10 {
+    width: 81.333333%;
+    margin: 1%;  
+}
+.col-11 {
+    width: 89.666666%;
+    margin: 1%;   
+}
+.col-12 {
+    width: 98%;
+    margin: 1%;   
+}
